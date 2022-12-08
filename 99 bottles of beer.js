@@ -47,7 +47,7 @@ Example
 */
 
 
-var sing = function () {
+var sing = function (){
   // The most evil kata so far :)
   var lyrics = [];
   for (var i = 99; i >= 3; i--) {
