@@ -16,4 +16,6 @@
 // 15 should return FizzBuzz
 // 17 should return 17
 
-const fizzBuzz = n => n%15 ? n%5 ? n%3 ? n : "Fizz" : "Buzz" : "FizzBuzz" ;
+const fizzBuzz = n => n%15 ? n%5 ? 
+n%3 ? n : "Fizz" : "Buzz" : "FizzBuzz";
+
