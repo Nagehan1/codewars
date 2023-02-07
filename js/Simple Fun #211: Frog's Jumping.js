@@ -24,3 +24,12 @@
 // "2121", one of the shortest ones, but not the lexicographically smallest;
 
 // "1221", the shortest and the lexicographically smallest.
+
+function frogsJumping(stones) {
+    let ss = stones.map((s, i) => stones[i+1] && Math.abs(s-stones[i+1])).filter(Boolean), arr = [];
+    for (let i = ss.length - 1; i >= 0;i--) {
+      if (!ss[i-1] || (ss[i-1] + ss[i] !== 2)) { arr.unshift(ss[i]); }
+      else { arr.unshift(2);i-- }
+    }
+    return arr.join('');
+  }
