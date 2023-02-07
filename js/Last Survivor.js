@@ -15,3 +15,15 @@
 // The length of the array is always one less than the length of the string.
 // All numbers are valid.
 // There can be duplicate letters and numbers.
+
+
+
+function lastSurvivor(letters, indexes) {
+    const l = [];
+    for (let i = 0; i < letters.length; i++)
+     l[i] = letters[i];
+    for (let i = 0; i < indexes.length; i++)
+      l.splice(indexes[i], 1);
+    return l.join('');
+  }
+  
