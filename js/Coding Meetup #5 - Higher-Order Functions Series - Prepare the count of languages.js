@@ -19,5 +19,9 @@
 // The count value should be a valid number.
 // The input array will always be valid and formatted as in the example above.
 
-
+function countLanguages(list) {
+    const obj={};
+    list.map(v=>obj[v.language]=(obj[v.language]||0)+1)
+    return obj
+  }
 
