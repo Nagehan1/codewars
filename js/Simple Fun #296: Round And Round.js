@@ -44,3 +44,11 @@
 
 // Ram will walk clockwise around the house, counting the entrances as follows: 1->2->3->4.
 
+function roundAndRound(n, a, b) {
+
+    let endDoor = (a + b) % n;
+    
+    if (endDoor < 1) endDoor += n;
+    
+    return endDoor;
+  }
