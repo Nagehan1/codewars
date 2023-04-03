@@ -8,3 +8,9 @@
 // Shape (either diamond, snake or capsule)
 // Colour (either green, blue or red)
 // Pattern (either blank, striped or solid)
+
+const card1 = {shape: 'diamond', color: 'green', pattern: 'blank'};
+const card2 = {shape: 'snake', color: 'blue', pattern: 'striped'};
+const card3 = {shape: 'capsule', color: 'red', pattern: 'solid'};
+
+console.log(isSet(card1, card2, card3)); // Output: true
