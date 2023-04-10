@@ -13,4 +13,4 @@
 
 // Your code should be able to compute the first 5 000 ( LC: 400, Clojure: 2 000, Haskell: 12 691, NASM, C, D, C++, Go and Rust: 13 282 ) Hamming numbers without timing out.
 
-I am trying to solve
+I am trying to solve..
