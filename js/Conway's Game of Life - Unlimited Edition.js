@@ -11,3 +11,7 @@
 // For illustration purposes, 0 and 1 will be represented as ░░ and ▓▓ blocks respectively (PHP, C: plain black and white squares). You can take advantage of the htmlize function to get a text representation of the universe, e.g.:
 
 // console.log(htmlize(cells));
+
+function getGeneration(cells, generations){
+
+}
