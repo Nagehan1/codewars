@@ -100,7 +100,5 @@ function gameOfLife(cells, generations) {
     return croppedCells.length === 0 ? [[]] : croppedCells;
   }
   
-  // Helper function to convert the cells array to a text representation
-  function htmlize(cells) {
-    return cells.map(row =>
+ 
   
