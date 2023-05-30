@@ -12,3 +12,24 @@
 // lookAndSaySequence("14", 2)  === "1114"
 // Trivia: "22" is the only element that can keep the series constant.
 
+function lookAndSaySequence(startingString, n) {
+    let currentString = startingString;
+  
+    for (let i = 1; i < n; i++) {
+      let newString = '';
+      let count = 1;
+  
+      for (let j = 0; j < currentString.length; j++) {
+        if (currentString[j] === currentString[j + 1]) {
+          count++;
+        } else {
+          newString += count + currentString[j];
+          count = 1;
+        }
+      }
+  
+      currentString = newString;
+    }
+  
+    return currentString;
+  }
