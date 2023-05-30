@@ -39,4 +39,9 @@ function lookAndSay(data,len){
     }
     return result;
   }
-  
+  function lookAndSaySequence(s, n){
+    while(--n) {
+      s=s.replace(/(.)\1*/g,(m)=>m.length+m[0])
+    }
+    return s;
+  }
