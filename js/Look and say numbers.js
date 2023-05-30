@@ -46,5 +46,7 @@ function lookAndSay(data,len){
     return s;
 
     
+
+    
   }
 
