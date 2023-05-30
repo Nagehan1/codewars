@@ -44,4 +44,7 @@ function lookAndSay(data,len){
       s=s.replace(/(.)\1*/g,(m)=>m.length+m[0])
     }
     return s;
+
+    
   }
+
