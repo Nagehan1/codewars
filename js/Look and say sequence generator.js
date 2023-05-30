@@ -32,4 +32,16 @@ function lookAndSaySequence(startingString, n) {
     }
   
     return currentString;
+
+
+  }
+
+
+
+//second solution
+  function lookAndSaySequence(s, n){
+    while(--n) {
+      s=s.replace(/(.)\1*/g,(m)=>m.length+m[0])
+    }
+    return s;
   }
