@@ -19,3 +19,20 @@
 
 // The format of the strings will always be Europe and JavaScript.
 // All data will always be valid and uniform as in the example above.
+function countDevelopers(list) {
+    let count = 0;
+  
+    for (let i = 0; i < list.length; i++) {
+      const developer = list[i];
+  
+      if (developer.continent === 'Europe' && developer.language === 'JavaScript') {
+        count++;
+      }
+    }
+  
+    return count;
+  }
+
+  
+
+  
