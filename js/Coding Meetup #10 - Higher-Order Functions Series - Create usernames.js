@@ -25,15 +25,18 @@
 // Order of the objects in the array should be maintained but order of the properties in the individual objects does not matter.
 
 
-function addUsername(list) {
-    const currentYear = new Date().getFullYear();
+// function addUsername(list) {
+//     const currentYear = new Date().getFullYear();
   
-    list.forEach(obj => {
-      const birthYear = currentYear - obj.age;
-      const username = obj.firstName.toLowerCase() + obj.lastName[0].toLowerCase() + birthYear;
-      obj.username = username;
-    });
+//     list.forEach(obj => {
+//       const birthYear = currentYear - obj.age;
+//       const username = obj.firstName.toLowerCase() + obj.lastName[0].toLowerCase() + birthYear;
+//       obj.username = username;
+//     });
   
-    return list;
-  }
+//     return list;
+//   }
   
+// solution2
+
+addUsername=a=>a.map(e=>(e.username=(e.firstName+e.lastName[0]).toLowerCase()+((new Date).getFullYear()-e.age),e))
