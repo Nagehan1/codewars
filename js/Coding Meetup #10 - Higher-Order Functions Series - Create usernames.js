@@ -24,7 +24,7 @@
 // Lastname will always be one upper-cased letter followed by dot, e.g. 'N.'
 // Order of the objects in the array should be maintained but order of the properties in the individual objects does not matter.
 
-
+//  solution1
 // function addUsername(list) {
 //     const currentYear = new Date().getFullYear();
   
